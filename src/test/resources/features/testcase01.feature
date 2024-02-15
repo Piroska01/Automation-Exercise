@@ -23,7 +23,7 @@ Feature:As a user I should be able create an account
     And Click Continue button
     And Verify that Logged in as username is visible
     And Click Delete Account button
-    Then Verify that "ACCOUNT DELETED!" is visible and click Continue button
+    Then Verify that ACCOUNT DELETED! is visible and click Continue button
 
 
 

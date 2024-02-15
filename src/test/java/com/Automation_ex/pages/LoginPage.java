@@ -26,4 +26,7 @@ public class LoginPage extends BasePage{
 
     @FindBy(xpath = "//a[normalize-space()='Delete Account']")
     public WebElement deleteAccount;
+
+    @FindBy(xpath = "//b[normalize-space()='Account Deleted!']")
+    public WebElement deletedText;
 }

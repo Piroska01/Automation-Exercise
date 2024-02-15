@@ -115,38 +115,24 @@ public class TestCase01_Step_Def {
     @And("Verify that ACCOUNT CREATED! is visible")
     public void verifyThatACCOUNTCREATEDIsVisible() {
 
-        //String actual = accoutnCreatedPage.accountCreatedText.getText();
-       // Assert.assertEquals(expected,actual);
+
 
         accoutnCreatedPage.accountCreatedText.isDisplayed();
     }
 
     @When("Click Continue button")
     public void click_continue_button() {
-        BrowserUtil.waitForClickablility(accoutnCreatedPage.continueButton,20);
+
         accoutnCreatedPage.continueButton.click();
 
-       // Alert alert = driver.switchTo().alert;
 
-       Alert alert = Driver.getDriver().switchTo().alert();
-        alert.dismiss();
 
     }
-
         @And("Verify that Logged in as username is visible")
         public void verifyThatLoggedInAsUsernameIsVisible() {
 
 
-
-
-       // BrowserUtil.waitForVisibility(loginPage.LoginName,5);
-       // String actualLogin = loginPage.LoginName.getText();
-       // Assert.assertEquals(expectedLogin,actualLogin);
-
             Assert.assertTrue(loginPage.LoginName.isDisplayed());
-
-
-
     }
     @When("Click Delete Account button")
     public void click_delete_account_button() {
@@ -155,5 +141,9 @@ public class TestCase01_Step_Def {
     }
 
 
+    @Then("Verify that ACCOUNT DELETED! is visible and click Continue button")
+    public void verifyThatACCOUNTDELETEDIsVisibleAndClickContinueButton() {
 
+        Assert.assertTrue(loginPage.deletedText.isDisplayed());
+    }
 }
