@@ -115,8 +115,6 @@ public class TestCase01_Step_Def {
     @And("Verify that ACCOUNT CREATED! is visible")
     public void verifyThatACCOUNTCREATEDIsVisible() {
 
-
-
         accoutnCreatedPage.accountCreatedText.isDisplayed();
     }
 
@@ -124,8 +122,6 @@ public class TestCase01_Step_Def {
     public void click_continue_button() {
 
         accoutnCreatedPage.continueButton.click();
-
-
 
     }
         @And("Verify that Logged in as username is visible")
@@ -139,7 +135,6 @@ public class TestCase01_Step_Def {
      loginPage.deleteAccount.click();
 
     }
-
 
     @Then("Verify that ACCOUNT DELETED! is visible and click Continue button")
     public void verifyThatACCOUNTDELETEDIsVisibleAndClickContinueButton() {
